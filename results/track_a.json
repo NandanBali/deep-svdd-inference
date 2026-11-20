@@ -1,0 +1,1694 @@
+{
+  "normal_rows": 97010,
+  "correlation_threshold": 0.95,
+  "modal_limit": 0.9995,
+  "variance_floor": 1e-06,
+  "used_attack_labels": false,
+  "caveat": "Benign filtering uses the binary label. No attack samples or attack-family labels contribute to this track. Normal variance/covariance/redundancy do not demonstrate detection usefulness; attack relationships can differ.",
+  "rows": [
+    {
+      "feature": "L4_SRC_PORT",
+      "kind": "port",
+      "normal_rows": 97010,
+      "modal_fraction": 0.7483867642511082,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.0005666304262212722,
+        0.001389672536543501,
+        0.18830401534512795,
+        0.1873272181384242
+      ],
+      "encoded_dimension": 4,
+      "removal": null
+    },
+    {
+      "feature": "L4_DST_PORT",
+      "kind": "port",
+      "normal_rows": 97010,
+      "modal_fraction": 0.5586743634676837,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.0005666304262212722,
+        0.2465573190717264,
+        0.22956405821775064,
+        0.07670514967993237
+      ],
+      "encoded_dimension": 4,
+      "removal": null
+    },
+    {
+      "feature": "PROTOCOL",
+      "kind": "categorical",
+      "normal_rows": 97010,
+      "modal_fraction": 0.7722915163385218,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.17585733013025975,
+        0.1755482563323648,
+        0.0005254426175756851
+      ],
+      "encoded_dimension": 3,
+      "removal": null
+    },
+    {
+      "feature": "L7_PROTO",
+      "kind": "categorical",
+      "normal_rows": 97010,
+      "modal_fraction": 0.31488506339552624,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.21573246024621773,
+        0.16593527101521832,
+        0.132848514145906,
+        0.2166309807882033
+      ],
+      "encoded_dimension": 4,
+      "removal": null
+    },
+    {
+      "feature": "IN_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.10418513555303577,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.036474605183094234
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "IN_PKTS",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.15247912586331305,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.04594186595395889
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "OUT_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.10405112874961345,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.02455291194914097
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "OUT_PKTS",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.152242036903412,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.03286652871623099
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "TCP_FLAGS",
+      "kind": "flags",
+      "normal_rows": 97010,
+      "modal_fraction": 0.5530048448613545,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.2445098636851889,
+        0.2468368796653917,
+        0.0,
+        0.17602003746658038,
+        0.17587417021148,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "encoded_dimension": 8,
+      "removal": null
+    },
+    {
+      "feature": "CLIENT_TCP_FLAGS",
+      "kind": "flags",
+      "normal_rows": 97010,
+      "modal_fraction": 0.5170188640346356,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.24456775843290948,
+        0.2468368796653917,
+        0.0,
+        0.19435439494491594,
+        0.17587417021148,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "encoded_dimension": 8,
+      "removal": null
+    },
+    {
+      "feature": "SERVER_TCP_FLAGS",
+      "kind": "flags",
+      "normal_rows": 97010,
+      "modal_fraction": 0.5340068034223276,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.24454798686922138,
+        0.2469117983226483,
+        0.0,
+        0.1958422037985333,
+        0.1759919972291309,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "encoded_dimension": 8,
+      "removal": null
+    },
+    {
+      "feature": "FLOW_DURATION_MILLISECONDS",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.16319967013709927,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.054004143783388296
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "DURATION_IN",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.17824966498299144,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.06156893010966918
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "DURATION_OUT",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.1950726729203175,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.0653125311484268
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "MIN_TTL",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.9909287702298732,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.007358086941870902
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "MAX_TTL",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.8387382744047005,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.007410849420798864
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "LONGEST_FLOW_PKT",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.20359756726110712,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.1865270172830859
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "SHORTEST_FLOW_PKT",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.8072363673848056,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.016378077546551947
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "MIN_IP_PKT_LEN",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.8071539016596228,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.013077051474034873
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "MAX_IP_PKT_LEN",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.20359756726110712,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.1865270172830859
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "RETRANSMITTED_IN_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.24784042882177096,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.0911667989817396
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "RETRANSMITTED_IN_PKTS",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.27205442737862073,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.052107038091140666
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "RETRANSMITTED_OUT_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.26734357282754356,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.08307718146299443
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "RETRANSMITTED_OUT_PKTS",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.26734357282754356,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.04725788098952711
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "SRC_TO_DST_AVG_THROUGHPUT",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.0915781878156891,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.030919543655829954
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "DST_TO_SRC_AVG_THROUGHPUT",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.09151633852180188,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.020700133330121204
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "NUM_PKTS_UP_TO_128_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.18576435419028967,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.03372511236602935
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "NUM_PKTS_128_TO_256_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.7459849500051541,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.05211602948845493
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "NUM_PKTS_256_TO_512_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.6865890114421194,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.06479229559488288
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "NUM_PKTS_512_TO_1024_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.8007937326048861,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.02879939947897528
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "NUM_PKTS_1024_TO_1514_BYTES",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.5759406246778682,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.05773993452969451
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "TCP_WIN_MAX_IN",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.24738686733326462,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.06699740180028066
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "TCP_WIN_MAX_OUT",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.272755386042676,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.027252507219649006
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "ICMP_TYPE",
+      "kind": "categorical",
+      "normal_rows": 97010,
+      "modal_fraction": 0.2485723121327698,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.18678411777392576,
+        0.07974700008993009,
+        0.07525169733055523,
+        0.2432638563919328
+      ],
+      "encoded_dimension": 4,
+      "removal": null
+    },
+    {
+      "feature": "ICMP_IPV4_TYPE",
+      "kind": "categorical",
+      "normal_rows": 97010,
+      "modal_fraction": 0.2485723121327698,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.18678411777392576,
+        0.07974700008993009,
+        0.07525169733055523,
+        0.2432638563919328
+      ],
+      "encoded_dimension": 4,
+      "removal": null
+    },
+    {
+      "feature": "DNS_QUERY_TYPE",
+      "kind": "categorical",
+      "normal_rows": 97010,
+      "modal_fraction": 0.8422843005875683,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.13284145757100066,
+        0.12900703607692252,
+        0.005464091839229234
+      ],
+      "encoded_dimension": 3,
+      "removal": null
+    },
+    {
+      "feature": "DNS_TTL_ANSWER",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.8425832388413566,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.03006033781156028
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "FTP_COMMAND_RET_CODE",
+      "kind": "categorical",
+      "normal_rows": 97010,
+      "modal_fraction": 0.8055252035872591,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.15665434997285108,
+        0.055531819291905496,
+        0.05514978689542536,
+        0.07096834204679653
+      ],
+      "encoded_dimension": 4,
+      "removal": null
+    },
+    {
+      "feature": "SRC_TO_DST_IAT_MIN",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.999360890629832,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.00941685484438969
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "SRC_TO_DST_IAT_MAX",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.1713534687145655,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.06593380610333277
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "SRC_TO_DST_IAT_AVG",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.530450469023812,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.06829194739589532
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "SRC_TO_DST_IAT_STDDEV",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.45744768580558703,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.08882739098961873
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "DST_TO_SRC_IAT_MIN",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.999845376765282,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.0008462763226490538
+      ],
+      "encoded_dimension": 1,
+      "removal": "near-constant: normal training modal fraction >= 0.9995"
+    },
+    {
+      "feature": "DST_TO_SRC_IAT_MAX",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.18925883929491805,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.06764354627189645
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "DST_TO_SRC_IAT_AVG",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.5453046077723946,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.0763547801095646
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    },
+    {
+      "feature": "DST_TO_SRC_IAT_STDDEV",
+      "kind": "numeric",
+      "normal_rows": 97010,
+      "modal_fraction": 0.4545098443459437,
+      "invalid_fraction": 0.0,
+      "encoded_variances": [
+        0.09336179991288886
+      ],
+      "encoded_dimension": 1,
+      "removal": null
+    }
+  ],
+  "retained_numeric": [
+    "MIN_TTL",
+    "MAX_IP_PKT_LEN",
+    "MIN_IP_PKT_LEN",
+    "TCP_WIN_MAX_IN",
+    "TCP_WIN_MAX_OUT",
+    "SHORTEST_FLOW_PKT",
+    "IN_BYTES",
+    "OUT_BYTES",
+    "FLOW_DURATION_MILLISECONDS",
+    "NUM_PKTS_128_TO_256_BYTES",
+    "NUM_PKTS_256_TO_512_BYTES",
+    "NUM_PKTS_512_TO_1024_BYTES",
+    "NUM_PKTS_1024_TO_1514_BYTES",
+    "SRC_TO_DST_AVG_THROUGHPUT",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "SRC_TO_DST_IAT_MIN",
+    "SRC_TO_DST_IAT_AVG",
+    "RETRANSMITTED_IN_BYTES",
+    "DNS_TTL_ANSWER"
+  ],
+  "retained_nominal": [
+    "L4_SRC_PORT",
+    "L4_DST_PORT",
+    "PROTOCOL",
+    "L7_PROTO",
+    "TCP_FLAGS",
+    "CLIENT_TCP_FLAGS",
+    "SERVER_TCP_FLAGS",
+    "ICMP_TYPE",
+    "ICMP_IPV4_TYPE",
+    "DNS_QUERY_TYPE",
+    "FTP_COMMAND_RET_CODE"
+  ],
+  "removed": {
+    "DST_TO_SRC_IAT_MIN": "near-constant: normal training modal fraction >= 0.9995",
+    "MAX_TTL": "normal-training redundancy with MIN_TTL",
+    "LONGEST_FLOW_PKT": "normal-training redundancy with MAX_IP_PKT_LEN",
+    "IN_PKTS": "normal-training redundancy with TCP_WIN_MAX_IN",
+    "OUT_PKTS": "normal-training redundancy with TCP_WIN_MAX_IN",
+    "NUM_PKTS_UP_TO_128_BYTES": "normal-training redundancy with TCP_WIN_MAX_IN",
+    "DURATION_IN": "normal-training redundancy with FLOW_DURATION_MILLISECONDS",
+    "DURATION_OUT": "normal-training redundancy with FLOW_DURATION_MILLISECONDS",
+    "SRC_TO_DST_IAT_MAX": "normal-training redundancy with FLOW_DURATION_MILLISECONDS",
+    "DST_TO_SRC_IAT_MAX": "normal-training redundancy with FLOW_DURATION_MILLISECONDS",
+    "DST_TO_SRC_IAT_AVG": "normal-training redundancy with SRC_TO_DST_IAT_AVG",
+    "RETRANSMITTED_OUT_BYTES": "normal-training redundancy with OUT_BYTES",
+    "RETRANSMITTED_IN_PKTS": "normal-training redundancy with TCP_WIN_MAX_OUT",
+    "RETRANSMITTED_OUT_PKTS": "normal-training redundancy with TCP_WIN_MAX_IN",
+    "SRC_TO_DST_IAT_STDDEV": "normal-training redundancy with SRC_TO_DST_IAT_AVG",
+    "DST_TO_SRC_IAT_STDDEV": "normal-training redundancy with SRC_TO_DST_IAT_AVG"
+  },
+  "redundant_pairs": [
+    {
+      "removed": "MAX_TTL",
+      "retained": "MIN_TTL",
+      "pearson": 0.99144165588861,
+      "spearman": 0.257586018796891,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "LONGEST_FLOW_PKT",
+      "retained": "MAX_IP_PKT_LEN",
+      "pearson": 1.0,
+      "spearman": 1.0,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "IN_PKTS",
+      "retained": "TCP_WIN_MAX_IN",
+      "pearson": 0.9017818122307412,
+      "spearman": 0.9682603743627266,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "OUT_PKTS",
+      "retained": "TCP_WIN_MAX_IN",
+      "pearson": 0.9151231600637333,
+      "spearman": 0.9829645751717152,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "NUM_PKTS_UP_TO_128_BYTES",
+      "retained": "TCP_WIN_MAX_IN",
+      "pearson": 0.8641812401309762,
+      "spearman": 0.9575436953451933,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "DURATION_IN",
+      "retained": "FLOW_DURATION_MILLISECONDS",
+      "pearson": 0.9875369805846094,
+      "spearman": 0.9862906172089657,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "DURATION_OUT",
+      "retained": "FLOW_DURATION_MILLISECONDS",
+      "pearson": 0.9891033498443995,
+      "spearman": 0.9936289102061157,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "SRC_TO_DST_IAT_MAX",
+      "retained": "FLOW_DURATION_MILLISECONDS",
+      "pearson": 0.9427805877957075,
+      "spearman": 0.9546512396059778,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "DST_TO_SRC_IAT_MAX",
+      "retained": "FLOW_DURATION_MILLISECONDS",
+      "pearson": 0.9380409782340792,
+      "spearman": 0.9522589980760678,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "DST_TO_SRC_IAT_AVG",
+      "retained": "SRC_TO_DST_IAT_AVG",
+      "pearson": 0.9765275247142526,
+      "spearman": 0.9753165533949782,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "RETRANSMITTED_OUT_BYTES",
+      "retained": "OUT_BYTES",
+      "pearson": 0.9370777008004734,
+      "spearman": 0.9871787972424035,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "RETRANSMITTED_IN_PKTS",
+      "retained": "TCP_WIN_MAX_OUT",
+      "pearson": 0.8960305782803961,
+      "spearman": 0.9718123725678107,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "RETRANSMITTED_OUT_PKTS",
+      "retained": "TCP_WIN_MAX_IN",
+      "pearson": 0.9465677631636509,
+      "spearman": 0.9938959798311132,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "SRC_TO_DST_IAT_STDDEV",
+      "retained": "SRC_TO_DST_IAT_AVG",
+      "pearson": 0.9754059771262031,
+      "spearman": 0.9559924045925503,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    },
+    {
+      "removed": "DST_TO_SRC_IAT_STDDEV",
+      "retained": "SRC_TO_DST_IAT_AVG",
+      "pearson": 0.9687157668268074,
+      "spearman": 0.9459576174334644,
+      "reason": "Absolute Pearson or Spearman meets heuristic; prefer extraction cost, training data quality, explicit semantics, then declared priority"
+    }
+  ],
+  "scaling": {
+    "version": 1,
+    "raw_columns": [
+      "L4_SRC_PORT",
+      "L4_DST_PORT",
+      "PROTOCOL",
+      "L7_PROTO",
+      "IN_BYTES",
+      "IN_PKTS",
+      "OUT_BYTES",
+      "OUT_PKTS",
+      "TCP_FLAGS",
+      "CLIENT_TCP_FLAGS",
+      "SERVER_TCP_FLAGS",
+      "FLOW_DURATION_MILLISECONDS",
+      "DURATION_IN",
+      "DURATION_OUT",
+      "MIN_TTL",
+      "MAX_TTL",
+      "LONGEST_FLOW_PKT",
+      "SHORTEST_FLOW_PKT",
+      "MIN_IP_PKT_LEN",
+      "MAX_IP_PKT_LEN",
+      "RETRANSMITTED_IN_BYTES",
+      "RETRANSMITTED_IN_PKTS",
+      "RETRANSMITTED_OUT_BYTES",
+      "RETRANSMITTED_OUT_PKTS",
+      "SRC_TO_DST_AVG_THROUGHPUT",
+      "DST_TO_SRC_AVG_THROUGHPUT",
+      "NUM_PKTS_UP_TO_128_BYTES",
+      "NUM_PKTS_128_TO_256_BYTES",
+      "NUM_PKTS_256_TO_512_BYTES",
+      "NUM_PKTS_512_TO_1024_BYTES",
+      "NUM_PKTS_1024_TO_1514_BYTES",
+      "TCP_WIN_MAX_IN",
+      "TCP_WIN_MAX_OUT",
+      "ICMP_TYPE",
+      "ICMP_IPV4_TYPE",
+      "DNS_QUERY_TYPE",
+      "DNS_TTL_ANSWER",
+      "FTP_COMMAND_RET_CODE",
+      "SRC_TO_DST_IAT_MIN",
+      "SRC_TO_DST_IAT_MAX",
+      "SRC_TO_DST_IAT_AVG",
+      "SRC_TO_DST_IAT_STDDEV",
+      "DST_TO_SRC_IAT_MIN",
+      "DST_TO_SRC_IAT_MAX",
+      "DST_TO_SRC_IAT_AVG",
+      "DST_TO_SRC_IAT_STDDEV"
+    ],
+    "entries": [
+      {
+        "raw_column": "L4_SRC_PORT",
+        "kind": "port",
+        "offset": 0,
+        "encoding": "one_hot",
+        "categories": [
+          "zero",
+          "system",
+          "registered",
+          "dynamic"
+        ],
+        "has_other": false,
+        "unknown_and_missing": "all_zero",
+        "other_channel_min_frequency": 0.0005,
+        "output_names": [
+          "L4_SRC_PORT=zero",
+          "L4_SRC_PORT=system",
+          "L4_SRC_PORT=registered",
+          "L4_SRC_PORT=dynamic"
+        ]
+      },
+      {
+        "raw_column": "L4_DST_PORT",
+        "kind": "port",
+        "offset": 4,
+        "encoding": "one_hot",
+        "categories": [
+          "zero",
+          "system",
+          "registered",
+          "dynamic"
+        ],
+        "has_other": false,
+        "unknown_and_missing": "all_zero",
+        "other_channel_min_frequency": 0.0005,
+        "output_names": [
+          "L4_DST_PORT=zero",
+          "L4_DST_PORT=system",
+          "L4_DST_PORT=registered",
+          "L4_DST_PORT=dynamic"
+        ]
+      },
+      {
+        "raw_column": "PROTOCOL",
+        "kind": "categorical",
+        "offset": 8,
+        "encoding": "one_hot",
+        "categories": [
+          "6",
+          "17",
+          "89"
+        ],
+        "has_other": false,
+        "unknown_and_missing": "all_zero",
+        "other_channel_min_frequency": 0.0005,
+        "output_names": [
+          "PROTOCOL=6",
+          "PROTOCOL=17",
+          "PROTOCOL=89"
+        ]
+      },
+      {
+        "raw_column": "L7_PROTO",
+        "kind": "categorical",
+        "offset": 11,
+        "encoding": "one_hot",
+        "categories": [
+          "37",
+          "36",
+          "5"
+        ],
+        "has_other": true,
+        "unknown_and_missing": "other",
+        "other_channel_min_frequency": 0.0005,
+        "output_names": [
+          "L7_PROTO=37",
+          "L7_PROTO=36",
+          "L7_PROTO=5",
+          "L7_PROTO=other"
+        ]
+      },
+      {
+        "raw_column": "IN_BYTES",
+        "kind": "numeric",
+        "offset": 15,
+        "encoding": "numeric",
+        "median": 1684.0,
+        "log1p": true,
+        "anchor_lower": 2.302585092994046,
+        "anchor_upper": 10.549254824049264,
+        "clip_lower": -5.944084638061171,
+        "clip_upper": 35.28926401721491,
+        "scale": 8.246669731055217,
+        "output_names": [
+          "IN_BYTES"
+        ]
+      },
+      {
+        "raw_column": "IN_PKTS",
+        "kind": "numeric",
+        "offset": 16,
+        "encoding": "numeric",
+        "median": 19.0,
+        "log1p": true,
+        "anchor_lower": 0.6931471805599453,
+        "anchor_upper": 6.418364935936212,
+        "clip_lower": -5.032070574816321,
+        "clip_upper": 23.59401820206501,
+        "scale": 5.725217755376266,
+        "output_names": [
+          "IN_PKTS"
+        ]
+      },
+      {
+        "raw_column": "OUT_BYTES",
+        "kind": "numeric",
+        "offset": 17,
+        "encoding": "numeric",
+        "median": 2512.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 14.136080491484366,
+        "clip_lower": -14.136080491484366,
+        "clip_upper": 56.54432196593746,
+        "scale": 14.136080491484366,
+        "output_names": [
+          "OUT_BYTES"
+        ]
+      },
+      {
+        "raw_column": "OUT_PKTS",
+        "kind": "numeric",
+        "offset": 18,
+        "encoding": "numeric",
+        "median": 20.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 6.981909572537585,
+        "clip_lower": -6.981909572537585,
+        "clip_upper": 27.92763829015034,
+        "scale": 6.981909572537585,
+        "output_names": [
+          "OUT_PKTS"
+        ]
+      },
+      {
+        "raw_column": "TCP_FLAGS",
+        "kind": "flags",
+        "offset": 19,
+        "encoding": "eight_bits_lsb_first",
+        "missing_value": 0,
+        "output_names": [
+          "TCP_FLAGS.bit0",
+          "TCP_FLAGS.bit1",
+          "TCP_FLAGS.bit2",
+          "TCP_FLAGS.bit3",
+          "TCP_FLAGS.bit4",
+          "TCP_FLAGS.bit5",
+          "TCP_FLAGS.bit6",
+          "TCP_FLAGS.bit7"
+        ]
+      },
+      {
+        "raw_column": "CLIENT_TCP_FLAGS",
+        "kind": "flags",
+        "offset": 27,
+        "encoding": "eight_bits_lsb_first",
+        "missing_value": 0,
+        "output_names": [
+          "CLIENT_TCP_FLAGS.bit0",
+          "CLIENT_TCP_FLAGS.bit1",
+          "CLIENT_TCP_FLAGS.bit2",
+          "CLIENT_TCP_FLAGS.bit3",
+          "CLIENT_TCP_FLAGS.bit4",
+          "CLIENT_TCP_FLAGS.bit5",
+          "CLIENT_TCP_FLAGS.bit6",
+          "CLIENT_TCP_FLAGS.bit7"
+        ]
+      },
+      {
+        "raw_column": "SERVER_TCP_FLAGS",
+        "kind": "flags",
+        "offset": 35,
+        "encoding": "eight_bits_lsb_first",
+        "missing_value": 0,
+        "output_names": [
+          "SERVER_TCP_FLAGS.bit0",
+          "SERVER_TCP_FLAGS.bit1",
+          "SERVER_TCP_FLAGS.bit2",
+          "SERVER_TCP_FLAGS.bit3",
+          "SERVER_TCP_FLAGS.bit4",
+          "SERVER_TCP_FLAGS.bit5",
+          "SERVER_TCP_FLAGS.bit6",
+          "SERVER_TCP_FLAGS.bit7"
+        ]
+      },
+      {
+        "raw_column": "FLOW_DURATION_MILLISECONDS",
+        "kind": "numeric",
+        "offset": 43,
+        "encoding": "numeric",
+        "median": 29.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 10.358222189262587,
+        "clip_lower": -10.358222189262587,
+        "clip_upper": 41.43288875705035,
+        "scale": 10.358222189262587,
+        "output_names": [
+          "FLOW_DURATION_MILLISECONDS"
+        ]
+      },
+      {
+        "raw_column": "DURATION_IN",
+        "kind": "numeric",
+        "offset": 44,
+        "encoding": "numeric",
+        "median": 26.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 10.358190747410974,
+        "clip_lower": -10.358190747410974,
+        "clip_upper": 41.4327629896439,
+        "scale": 10.358190747410974,
+        "output_names": [
+          "DURATION_IN"
+        ]
+      },
+      {
+        "raw_column": "DURATION_OUT",
+        "kind": "numeric",
+        "offset": 45,
+        "encoding": "numeric",
+        "median": 27.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 10.075462980504781,
+        "clip_lower": -10.075462980504781,
+        "clip_upper": 40.301851922019125,
+        "scale": 10.075462980504781,
+        "output_names": [
+          "DURATION_OUT"
+        ]
+      },
+      {
+        "raw_column": "MIN_TTL",
+        "kind": "numeric",
+        "offset": 46,
+        "encoding": "numeric",
+        "median": 31.0,
+        "log1p": false,
+        "anchor_lower": 0.0,
+        "anchor_upper": 31.0,
+        "clip_lower": -31.0,
+        "clip_upper": 124.0,
+        "scale": 31.0,
+        "output_names": [
+          "MIN_TTL"
+        ]
+      },
+      {
+        "raw_column": "MAX_TTL",
+        "kind": "numeric",
+        "offset": 47,
+        "encoding": "numeric",
+        "median": 32.0,
+        "log1p": false,
+        "anchor_lower": 0.0,
+        "anchor_upper": 32.0,
+        "clip_lower": -32.0,
+        "clip_upper": 128.0,
+        "scale": 32.0,
+        "output_names": [
+          "MAX_TTL"
+        ]
+      },
+      {
+        "raw_column": "LONGEST_FLOW_PKT",
+        "kind": "numeric",
+        "offset": 48,
+        "encoding": "numeric",
+        "median": 510.0,
+        "log1p": false,
+        "anchor_lower": 73.0,
+        "anchor_upper": 1500.0,
+        "clip_lower": -1354.0,
+        "clip_upper": 5781.0,
+        "scale": 1427.0,
+        "output_names": [
+          "LONGEST_FLOW_PKT"
+        ]
+      },
+      {
+        "raw_column": "SHORTEST_FLOW_PKT",
+        "kind": "numeric",
+        "offset": 49,
+        "encoding": "numeric",
+        "median": 52.0,
+        "log1p": false,
+        "anchor_lower": 52.0,
+        "anchor_upper": 132.0,
+        "clip_lower": -28.0,
+        "clip_upper": 372.0,
+        "scale": 80.0,
+        "output_names": [
+          "SHORTEST_FLOW_PKT"
+        ]
+      },
+      {
+        "raw_column": "MIN_IP_PKT_LEN",
+        "kind": "numeric",
+        "offset": 50,
+        "encoding": "numeric",
+        "median": 52.0,
+        "log1p": false,
+        "anchor_lower": 0.0,
+        "anchor_upper": 80.0,
+        "clip_lower": -80.0,
+        "clip_upper": 320.0,
+        "scale": 80.0,
+        "output_names": [
+          "MIN_IP_PKT_LEN"
+        ]
+      },
+      {
+        "raw_column": "MAX_IP_PKT_LEN",
+        "kind": "numeric",
+        "offset": 51,
+        "encoding": "numeric",
+        "median": 510.0,
+        "log1p": false,
+        "anchor_lower": 73.0,
+        "anchor_upper": 1500.0,
+        "clip_lower": -1354.0,
+        "clip_upper": 5781.0,
+        "scale": 1427.0,
+        "output_names": [
+          "MAX_IP_PKT_LEN"
+        ]
+      },
+      {
+        "raw_column": "RETRANSMITTED_IN_BYTES",
+        "kind": "numeric",
+        "offset": 52,
+        "encoding": "numeric",
+        "median": 562.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 9.833333292612922,
+        "clip_lower": -9.833333292612922,
+        "clip_upper": 39.33333317045169,
+        "scale": 9.833333292612922,
+        "output_names": [
+          "RETRANSMITTED_IN_BYTES"
+        ]
+      },
+      {
+        "raw_column": "RETRANSMITTED_IN_PKTS",
+        "kind": "numeric",
+        "offset": 53,
+        "encoding": "numeric",
+        "median": 4.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 4.3694478524670215,
+        "clip_lower": -4.3694478524670215,
+        "clip_upper": 17.477791409868086,
+        "scale": 4.3694478524670215,
+        "output_names": [
+          "RETRANSMITTED_IN_PKTS"
+        ]
+      },
+      {
+        "raw_column": "RETRANSMITTED_OUT_BYTES",
+        "kind": "numeric",
+        "offset": 54,
+        "encoding": "numeric",
+        "median": 887.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 13.439153884468654,
+        "clip_lower": -13.439153884468654,
+        "clip_upper": 53.756615537874616,
+        "scale": 13.439153884468654,
+        "output_names": [
+          "RETRANSMITTED_OUT_BYTES"
+        ]
+      },
+      {
+        "raw_column": "RETRANSMITTED_OUT_PKTS",
+        "kind": "numeric",
+        "offset": 55,
+        "encoding": "numeric",
+        "median": 5.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 6.194313082603111,
+        "clip_lower": -6.194313082603111,
+        "clip_upper": 24.777252330412445,
+        "scale": 6.194313082603111,
+        "output_names": [
+          "RETRANSMITTED_OUT_PKTS"
+        ]
+      },
+      {
+        "raw_column": "SRC_TO_DST_AVG_THROUGHPUT",
+        "kind": "numeric",
+        "offset": 56,
+        "encoding": "numeric",
+        "median": 565818.0,
+        "log1p": true,
+        "anchor_lower": 5.288491481229663,
+        "anchor_upper": 16.474706662853443,
+        "clip_lower": -5.897723700394117,
+        "clip_upper": 50.03335220772478,
+        "scale": 11.18621518162378,
+        "output_names": [
+          "SRC_TO_DST_AVG_THROUGHPUT"
+        ]
+      },
+      {
+        "raw_column": "DST_TO_SRC_AVG_THROUGHPUT",
+        "kind": "numeric",
+        "offset": 57,
+        "encoding": "numeric",
+        "median": 712000.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 16.659415080424406,
+        "clip_lower": -16.659415080424406,
+        "clip_upper": 66.63766032169762,
+        "scale": 16.659415080424406,
+        "output_names": [
+          "DST_TO_SRC_AVG_THROUGHPUT"
+        ]
+      },
+      {
+        "raw_column": "NUM_PKTS_UP_TO_128_BYTES",
+        "kind": "numeric",
+        "offset": 58,
+        "encoding": "numeric",
+        "median": 38.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 6.599772003017663,
+        "clip_lower": -6.599772003017663,
+        "clip_upper": 26.399088012070653,
+        "scale": 6.599772003017663,
+        "output_names": [
+          "NUM_PKTS_UP_TO_128_BYTES"
+        ]
+      },
+      {
+        "raw_column": "NUM_PKTS_128_TO_256_BYTES",
+        "kind": "numeric",
+        "offset": 59,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 3.6109179126442243,
+        "clip_lower": -3.6109179126442243,
+        "clip_upper": 14.443671650576897,
+        "scale": 3.6109179126442243,
+        "output_names": [
+          "NUM_PKTS_128_TO_256_BYTES"
+        ]
+      },
+      {
+        "raw_column": "NUM_PKTS_256_TO_512_BYTES",
+        "kind": "numeric",
+        "offset": 60,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 3.044522437723423,
+        "clip_lower": -3.044522437723423,
+        "clip_upper": 12.178089750893692,
+        "scale": 3.044522437723423,
+        "output_names": [
+          "NUM_PKTS_256_TO_512_BYTES"
+        ]
+      },
+      {
+        "raw_column": "NUM_PKTS_512_TO_1024_BYTES",
+        "kind": "numeric",
+        "offset": 61,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 4.394337351992384,
+        "clip_lower": -4.394337351992384,
+        "clip_upper": 17.577349407969535,
+        "scale": 4.394337351992384,
+        "output_names": [
+          "NUM_PKTS_512_TO_1024_BYTES"
+        ]
+      },
+      {
+        "raw_column": "NUM_PKTS_1024_TO_1514_BYTES",
+        "kind": "numeric",
+        "offset": 62,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 6.798965104987142,
+        "clip_lower": -6.798965104987142,
+        "clip_upper": 27.195860419948566,
+        "scale": 6.798965104987142,
+        "output_names": [
+          "NUM_PKTS_1024_TO_1514_BYTES"
+        ]
+      },
+      {
+        "raw_column": "TCP_WIN_MAX_IN",
+        "kind": "numeric",
+        "offset": 63,
+        "encoding": "numeric",
+        "median": 13032.0,
+        "log1p": false,
+        "anchor_lower": 0.0,
+        "anchor_upper": 65160.0,
+        "clip_lower": -65160.0,
+        "clip_upper": 260640.0,
+        "scale": 65160.0,
+        "output_names": [
+          "TCP_WIN_MAX_IN"
+        ]
+      },
+      {
+        "raw_column": "TCP_WIN_MAX_OUT",
+        "kind": "numeric",
+        "offset": 64,
+        "encoding": "numeric",
+        "median": 13032.0,
+        "log1p": false,
+        "anchor_lower": 0.0,
+        "anchor_upper": 65160.0,
+        "clip_lower": -65160.0,
+        "clip_upper": 260640.0,
+        "scale": 65160.0,
+        "output_names": [
+          "TCP_WIN_MAX_OUT"
+        ]
+      },
+      {
+        "raw_column": "ICMP_TYPE",
+        "kind": "categorical",
+        "offset": 65,
+        "encoding": "one_hot",
+        "categories": [
+          "0",
+          "21248",
+          "31232"
+        ],
+        "has_other": true,
+        "unknown_and_missing": "other",
+        "other_channel_min_frequency": 0.0005,
+        "output_names": [
+          "ICMP_TYPE=0",
+          "ICMP_TYPE=21248",
+          "ICMP_TYPE=31232",
+          "ICMP_TYPE=other"
+        ]
+      },
+      {
+        "raw_column": "ICMP_IPV4_TYPE",
+        "kind": "categorical",
+        "offset": 69,
+        "encoding": "one_hot",
+        "categories": [
+          "0",
+          "83",
+          "122"
+        ],
+        "has_other": true,
+        "unknown_and_missing": "other",
+        "other_channel_min_frequency": 0.0005,
+        "output_names": [
+          "ICMP_IPV4_TYPE=0",
+          "ICMP_IPV4_TYPE=83",
+          "ICMP_IPV4_TYPE=122",
+          "ICMP_IPV4_TYPE=other"
+        ]
+      },
+      {
+        "raw_column": "DNS_QUERY_TYPE",
+        "kind": "categorical",
+        "offset": 73,
+        "encoding": "one_hot",
+        "categories": [
+          "0",
+          "1",
+          "255"
+        ],
+        "has_other": false,
+        "unknown_and_missing": "all_zero",
+        "other_channel_min_frequency": 0.0005,
+        "output_names": [
+          "DNS_QUERY_TYPE=0",
+          "DNS_QUERY_TYPE=1",
+          "DNS_QUERY_TYPE=255"
+        ]
+      },
+      {
+        "raw_column": "DNS_TTL_ANSWER",
+        "kind": "numeric",
+        "offset": 76,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 9.27865301215827,
+        "clip_lower": -9.27865301215827,
+        "clip_upper": 37.11461204863308,
+        "scale": 9.27865301215827,
+        "output_names": [
+          "DNS_TTL_ANSWER"
+        ]
+      },
+      {
+        "raw_column": "FTP_COMMAND_RET_CODE",
+        "kind": "categorical",
+        "offset": 77,
+        "encoding": "one_hot",
+        "categories": [
+          "0",
+          "229",
+          "125"
+        ],
+        "has_other": true,
+        "unknown_and_missing": "other",
+        "other_channel_min_frequency": 0.0005,
+        "output_names": [
+          "FTP_COMMAND_RET_CODE=0",
+          "FTP_COMMAND_RET_CODE=229",
+          "FTP_COMMAND_RET_CODE=125",
+          "FTP_COMMAND_RET_CODE=other"
+        ]
+      },
+      {
+        "raw_column": "SRC_TO_DST_IAT_MIN",
+        "kind": "numeric",
+        "offset": 81,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 0.0,
+        "clip_lower": -1.0,
+        "clip_upper": 4.0,
+        "scale": 1.0,
+        "output_names": [
+          "SRC_TO_DST_IAT_MIN"
+        ]
+      },
+      {
+        "raw_column": "SRC_TO_DST_IAT_MAX",
+        "kind": "numeric",
+        "offset": 82,
+        "encoding": "numeric",
+        "median": 5.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 9.231412290350155,
+        "clip_lower": -9.231412290350155,
+        "clip_upper": 36.92564916140062,
+        "scale": 9.231412290350155,
+        "output_names": [
+          "SRC_TO_DST_IAT_MAX"
+        ]
+      },
+      {
+        "raw_column": "SRC_TO_DST_IAT_AVG",
+        "kind": "numeric",
+        "offset": 83,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 6.215954316881835,
+        "clip_lower": -6.215954316881835,
+        "clip_upper": 24.86381726752734,
+        "scale": 6.215954316881835,
+        "output_names": [
+          "SRC_TO_DST_IAT_AVG"
+        ]
+      },
+      {
+        "raw_column": "SRC_TO_DST_IAT_STDDEV",
+        "kind": "numeric",
+        "offset": 84,
+        "encoding": "numeric",
+        "median": 1.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 6.650267398100351,
+        "clip_lower": -6.650267398100351,
+        "clip_upper": 26.601069592401405,
+        "scale": 6.650267398100351,
+        "output_names": [
+          "SRC_TO_DST_IAT_STDDEV"
+        ]
+      },
+      {
+        "raw_column": "DST_TO_SRC_IAT_MIN",
+        "kind": "numeric",
+        "offset": 85,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 0.0,
+        "clip_lower": -1.0,
+        "clip_upper": 4.0,
+        "scale": 1.0,
+        "output_names": [
+          "DST_TO_SRC_IAT_MIN"
+        ]
+      },
+      {
+        "raw_column": "DST_TO_SRC_IAT_MAX",
+        "kind": "numeric",
+        "offset": 86,
+        "encoding": "numeric",
+        "median": 5.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 9.199711798274688,
+        "clip_lower": -9.199711798274688,
+        "clip_upper": 36.79884719309875,
+        "scale": 9.199711798274688,
+        "output_names": [
+          "DST_TO_SRC_IAT_MAX"
+        ]
+      },
+      {
+        "raw_column": "DST_TO_SRC_IAT_AVG",
+        "kind": "numeric",
+        "offset": 87,
+        "encoding": "numeric",
+        "median": 0.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 5.752486513766435,
+        "clip_lower": -5.752486513766435,
+        "clip_upper": 23.00994605506574,
+        "scale": 5.752486513766435,
+        "output_names": [
+          "DST_TO_SRC_IAT_AVG"
+        ]
+      },
+      {
+        "raw_column": "DST_TO_SRC_IAT_STDDEV",
+        "kind": "numeric",
+        "offset": 88,
+        "encoding": "numeric",
+        "median": 1.0,
+        "log1p": true,
+        "anchor_lower": 0.0,
+        "anchor_upper": 6.440946540632921,
+        "clip_lower": -6.440946540632921,
+        "clip_upper": 25.763786162531684,
+        "scale": 6.440946540632921,
+        "output_names": [
+          "DST_TO_SRC_IAT_STDDEV"
+        ]
+      }
+    ],
+    "output_names": [
+      "L4_SRC_PORT=zero",
+      "L4_SRC_PORT=system",
+      "L4_SRC_PORT=registered",
+      "L4_SRC_PORT=dynamic",
+      "L4_DST_PORT=zero",
+      "L4_DST_PORT=system",
+      "L4_DST_PORT=registered",
+      "L4_DST_PORT=dynamic",
+      "PROTOCOL=6",
+      "PROTOCOL=17",
+      "PROTOCOL=89",
+      "L7_PROTO=37",
+      "L7_PROTO=36",
+      "L7_PROTO=5",
+      "L7_PROTO=other",
+      "IN_BYTES",
+      "IN_PKTS",
+      "OUT_BYTES",
+      "OUT_PKTS",
+      "TCP_FLAGS.bit0",
+      "TCP_FLAGS.bit1",
+      "TCP_FLAGS.bit2",
+      "TCP_FLAGS.bit3",
+      "TCP_FLAGS.bit4",
+      "TCP_FLAGS.bit5",
+      "TCP_FLAGS.bit6",
+      "TCP_FLAGS.bit7",
+      "CLIENT_TCP_FLAGS.bit0",
+      "CLIENT_TCP_FLAGS.bit1",
+      "CLIENT_TCP_FLAGS.bit2",
+      "CLIENT_TCP_FLAGS.bit3",
+      "CLIENT_TCP_FLAGS.bit4",
+      "CLIENT_TCP_FLAGS.bit5",
+      "CLIENT_TCP_FLAGS.bit6",
+      "CLIENT_TCP_FLAGS.bit7",
+      "SERVER_TCP_FLAGS.bit0",
+      "SERVER_TCP_FLAGS.bit1",
+      "SERVER_TCP_FLAGS.bit2",
+      "SERVER_TCP_FLAGS.bit3",
+      "SERVER_TCP_FLAGS.bit4",
+      "SERVER_TCP_FLAGS.bit5",
+      "SERVER_TCP_FLAGS.bit6",
+      "SERVER_TCP_FLAGS.bit7",
+      "FLOW_DURATION_MILLISECONDS",
+      "DURATION_IN",
+      "DURATION_OUT",
+      "MIN_TTL",
+      "MAX_TTL",
+      "LONGEST_FLOW_PKT",
+      "SHORTEST_FLOW_PKT",
+      "MIN_IP_PKT_LEN",
+      "MAX_IP_PKT_LEN",
+      "RETRANSMITTED_IN_BYTES",
+      "RETRANSMITTED_IN_PKTS",
+      "RETRANSMITTED_OUT_BYTES",
+      "RETRANSMITTED_OUT_PKTS",
+      "SRC_TO_DST_AVG_THROUGHPUT",
+      "DST_TO_SRC_AVG_THROUGHPUT",
+      "NUM_PKTS_UP_TO_128_BYTES",
+      "NUM_PKTS_128_TO_256_BYTES",
+      "NUM_PKTS_256_TO_512_BYTES",
+      "NUM_PKTS_512_TO_1024_BYTES",
+      "NUM_PKTS_1024_TO_1514_BYTES",
+      "TCP_WIN_MAX_IN",
+      "TCP_WIN_MAX_OUT",
+      "ICMP_TYPE=0",
+      "ICMP_TYPE=21248",
+      "ICMP_TYPE=31232",
+      "ICMP_TYPE=other",
+      "ICMP_IPV4_TYPE=0",
+      "ICMP_IPV4_TYPE=83",
+      "ICMP_IPV4_TYPE=122",
+      "ICMP_IPV4_TYPE=other",
+      "DNS_QUERY_TYPE=0",
+      "DNS_QUERY_TYPE=1",
+      "DNS_QUERY_TYPE=255",
+      "DNS_TTL_ANSWER",
+      "FTP_COMMAND_RET_CODE=0",
+      "FTP_COMMAND_RET_CODE=229",
+      "FTP_COMMAND_RET_CODE=125",
+      "FTP_COMMAND_RET_CODE=other",
+      "SRC_TO_DST_IAT_MIN",
+      "SRC_TO_DST_IAT_MAX",
+      "SRC_TO_DST_IAT_AVG",
+      "SRC_TO_DST_IAT_STDDEV",
+      "DST_TO_SRC_IAT_MIN",
+      "DST_TO_SRC_IAT_MAX",
+      "DST_TO_SRC_IAT_AVG",
+      "DST_TO_SRC_IAT_STDDEV"
+    ],
+    "input_dimension": 89,
+    "dtype": "float32",
+    "fit_population": "normal training only",
+    "fit_rows": 97010,
+    "clip_quantile": 0.999,
+    "numeric_formula": "x=median if invalid; z=log1p(x) if configured else x; (clip(z,clip_lower,clip_upper)-anchor_lower)/scale",
+    "numeric_output_range": [
+      -1.0,
+      4.0
+    ],
+    "clipping_policy": "Training normal q0.001/q0.999 are scale anchors. Saturation extends one anchor-span below and three above that interval to retain bounded out-of-normal contrast.",
+    "invalid_behavior": "Absent required column: error. Malformed/nonfinite/negative/out-of-domain: missing. Numeric: training median; category: per-entry other or all-zero; flags: zero mask.",
+    "out_of_range": "Numeric values saturate at saved training-derived bounds, output [-1,4]; values beyond normal quantile anchors retain bounded contrast. Unknown categories follow per-entry other/all-zero rule. No refitting.",
+    "extra_columns": "Ignored; never used to infer order or inputs",
+    "flow_direction": "nProbe exported orientation; IN=src->dst, OUT=dst->src; do not reorder endpoints"
+  }
+}

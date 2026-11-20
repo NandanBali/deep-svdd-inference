@@ -1,0 +1,14 @@
+{
+  "release": "NF-UNSW-NB15-v3",
+  "doi": "10.48610/6E0EDA1",
+  "uuid": "abd2f5d8-e268-4ff0-84fb-f2f7b3ca3e8f",
+  "landing_page": "https://rdm.uq.edu.au/files/abd2f5d8-e268-4ff0-84fb-f2f7b3ca3e8f",
+  "download_endpoint": "https://api.rdm.uq.edu.au/datasets/abd2f5d8-e268-4ff0-84fb-f2f7b3ca3e8f/download",
+  "archive_sha256": "6d51554df43e324ba8d68fc31a02a83d860ba0a3a93d63320a4a6fc314c9cdfd",
+  "csv_sha256": "4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5",
+  "csv_sha1": "2cba4879ead17c51e3268a01c06af41186cd90e4",
+  "csv_bytes": 577360958,
+  "bagit_checksums_verified": true,
+  "choice": "No project dataset existed. Selected official v3 for timestamp-supported separation, then verified actual schema.",
+  "license": "Permitted Re-Use with Commercial Use Restriction; see official metadata"
+}

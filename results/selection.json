@@ -1,0 +1,191 @@
+{
+  "recommended_candidate": "A_compact",
+  "recommendation_status": "provisional: no Deep SVDD baseline available",
+  "recommendation_basis": "Bounded hardware extraction scope, clear original measurements, normal-training variability/redundancy; no detection claim",
+  "validation_attack_labels_used_for_selection": false,
+  "test_used_for_selection": false,
+  "baseline_available": false,
+  "deep_svdd_metrics": null,
+  "target_fpr": 0.01,
+  "baseline_policy": {
+    "architecture": "d -> 16 -> 8, bias-free; same activations/training budget for all candidates",
+    "training_population": "x_train contains only benign training rows",
+    "suggested_seeds": [
+      7,
+      17,
+      27
+    ],
+    "center_and_threshold": "Separate for every candidate and seed; calibrate threshold using normal validation scores only",
+    "selection": "Compare validation ROC-AUC, PR-AUC and recall/FPR + per-attack recall; disclose attack-validation selection; freeze before final test",
+    "collapse": "Export validation embeddings and center; inspect dimension variances, score distributions and training history"
+  },
+  "candidates": {
+    "A_compact": {
+      "track": "A",
+      "features": [
+        "IN_BYTES",
+        "OUT_BYTES",
+        "FLOW_DURATION_MILLISECONDS",
+        "MIN_TTL",
+        "MAX_IP_PKT_LEN",
+        "MIN_IP_PKT_LEN",
+        "TCP_WIN_MAX_IN",
+        "TCP_WIN_MAX_OUT"
+      ],
+      "rationale": "First up to eight retained cost<=2 measurements by declared semantic priority; minimum FPGA extraction/preprocessing scope.",
+      "raw_feature_count": 8,
+      "encoded_input_dimension": 8,
+      "normal_training_rows": 97010,
+      "validation_rows": 33310,
+      "validation_encoded_duplicate_purge": 58451,
+      "preprocessing_sha256": "67f83548bcbdf3813f0bed8708212f32523f2fd2098daa17721c9e2be42a274c",
+      "reason_each_feature": {
+        "IN_BYTES": {
+          "contribution": "Directional flow traffic total",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "OUT_BYTES": {
+          "contribution": "Directional flow traffic total",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "FLOW_DURATION_MILLISECONDS": {
+          "contribution": "Elapsed lifetime of exported flow",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "MIN_TTL": {
+          "contribution": "Smallest/largest observed IP time-to-live field",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "MAX_IP_PKT_LEN": {
+          "contribution": "Smallest/largest observed IP packet length",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "MIN_IP_PKT_LEN": {
+          "contribution": "Smallest/largest observed IP packet length",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "TCP_WIN_MAX_IN": {
+          "contribution": "Maximum observed directional TCP advertised window",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "TCP_WIN_MAX_OUT": {
+          "contribution": "Maximum observed directional TCP advertised window",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        }
+      },
+      "validation_rows_before_common_intersection": 41549
+    },
+    "A_balanced": {
+      "track": "A",
+      "features": [
+        "IN_BYTES",
+        "OUT_BYTES",
+        "FLOW_DURATION_MILLISECONDS",
+        "MIN_TTL",
+        "MAX_IP_PKT_LEN",
+        "MIN_IP_PKT_LEN",
+        "TCP_WIN_MAX_IN",
+        "TCP_WIN_MAX_OUT",
+        "PROTOCOL",
+        "L4_DST_PORT"
+      ],
+      "rationale": "Compact plus nominal protocol and destination port-range context when retained; bounded to 16 encoded inputs, no padding.",
+      "raw_feature_count": 10,
+      "encoded_input_dimension": 15,
+      "normal_training_rows": 97010,
+      "validation_rows": 33310,
+      "validation_encoded_duplicate_purge": 55784,
+      "preprocessing_sha256": "e2e97ca88901042b151718442c6838500d0ad91f6e9002c4ceb4f72c7e0f8336",
+      "reason_each_feature": {
+        "IN_BYTES": {
+          "contribution": "Directional flow traffic total",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "OUT_BYTES": {
+          "contribution": "Directional flow traffic total",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "FLOW_DURATION_MILLISECONDS": {
+          "contribution": "Elapsed lifetime of exported flow",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "MIN_TTL": {
+          "contribution": "Smallest/largest observed IP time-to-live field",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "MAX_IP_PKT_LEN": {
+          "contribution": "Smallest/largest observed IP packet length",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "MIN_IP_PKT_LEN": {
+          "contribution": "Smallest/largest observed IP packet length",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "TCP_WIN_MAX_IN": {
+          "contribution": "Maximum observed directional TCP advertised window",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "TCP_WIN_MAX_OUT": {
+          "contribution": "Maximum observed directional TCP advertised window",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "PROTOCOL": {
+          "contribution": "IP transport protocol code",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        },
+        "L4_DST_PORT": {
+          "contribution": "Transport endpoint port, interpreted as a service/range code",
+          "selection_reason": "normal-training variable, retained after redundancy analysis"
+        }
+      },
+      "validation_rows_before_common_intersection": 44216
+    },
+    "B_mrmr": {
+      "track": "B (uses attack training labels)",
+      "features": [
+        "MIN_TTL",
+        "MAX_TTL",
+        "MIN_IP_PKT_LEN",
+        "SERVER_TCP_FLAGS",
+        "DST_TO_SRC_AVG_THROUGHPUT",
+        "L7_PROTO"
+      ],
+      "rationale": "Greedy empirical quantile-bin mRMR difference criterion; includes attack-label assistance and can require expensive extraction.",
+      "raw_feature_count": 6,
+      "encoded_input_dimension": 16,
+      "normal_training_rows": 97010,
+      "validation_rows": 33310,
+      "validation_encoded_duplicate_purge": 65447,
+      "preprocessing_sha256": "fd5b36d0407f06e225261dd9a5e1d310622fa40e0b4c3712071f059202fb06b7",
+      "reason_each_feature": {
+        "MIN_TTL": {
+          "contribution": "Smallest/largest observed IP time-to-live field",
+          "selection_reason": "training-label relevance/redundancy criterion"
+        },
+        "MAX_TTL": {
+          "contribution": "Smallest/largest observed IP time-to-live field",
+          "selection_reason": "training-label relevance/redundancy criterion"
+        },
+        "MIN_IP_PKT_LEN": {
+          "contribution": "Smallest/largest observed IP packet length",
+          "selection_reason": "training-label relevance/redundancy criterion"
+        },
+        "SERVER_TCP_FLAGS": {
+          "contribution": "TCP control bits accumulated by bitwise OR",
+          "selection_reason": "training-label relevance/redundancy criterion"
+        },
+        "DST_TO_SRC_AVG_THROUGHPUT": {
+          "contribution": "Exporter mean directional bit rate",
+          "selection_reason": "training-label relevance/redundancy criterion"
+        },
+        "L7_PROTO": {
+          "contribution": "nProbe application classification code",
+          "selection_reason": "training-label relevance/redundancy criterion"
+        }
+      },
+      "validation_rows_before_common_intersection": 34553
+    }
+  },
+  "common_validation_rows": 33310,
+  "validation_comparison_policy": "Same common raw row IDs for all three candidates after union of per-candidate encoded-collision purges. Do not compare per-candidate filtered populations."
+}

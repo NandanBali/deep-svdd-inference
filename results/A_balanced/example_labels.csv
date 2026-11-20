@@ -1,0 +1,14 @@
+row_id,Label,Attack
+9640,0.0,Benign
+9716,0.0,Benign
+9740,0.0,Benign
+9760,0.0,Benign
+9758,1.0,Exploits
+9811,1.0,Fuzzers
+9889,1.0,Generic
+10621,1.0,Reconnaissance
+10633,1.0,Backdoor
+34208,1.0,DoS
+73371,1.0,Shellcode
+386759,1.0,Analysis
+416609,1.0,Worms

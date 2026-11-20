@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "raw_columns": [
+    "MIN_TTL",
+    "MAX_TTL",
+    "MIN_IP_PKT_LEN",
+    "SERVER_TCP_FLAGS",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "L7_PROTO"
+  ],
+  "entries": [
+    {
+      "raw_column": "MIN_TTL",
+      "kind": "numeric",
+      "offset": 0,
+      "encoding": "numeric",
+      "median": 31.0,
+      "log1p": false,
+      "anchor_lower": 0.0,
+      "anchor_upper": 31.0,
+      "clip_lower": -31.0,
+      "clip_upper": 124.0,
+      "scale": 31.0,
+      "output_names": [
+        "MIN_TTL"
+      ]
+    },
+    {
+      "raw_column": "MAX_TTL",
+      "kind": "numeric",
+      "offset": 1,
+      "encoding": "numeric",
+      "median": 32.0,
+      "log1p": false,
+      "anchor_lower": 0.0,
+      "anchor_upper": 32.0,
+      "clip_lower": -32.0,
+      "clip_upper": 128.0,
+      "scale": 32.0,
+      "output_names": [
+        "MAX_TTL"
+      ]
+    },
+    {
+      "raw_column": "MIN_IP_PKT_LEN",
+      "kind": "numeric",
+      "offset": 2,
+      "encoding": "numeric",
+      "median": 52.0,
+      "log1p": false,
+      "anchor_lower": 0.0,
+      "anchor_upper": 80.0,
+      "clip_lower": -80.0,
+      "clip_upper": 320.0,
+      "scale": 80.0,
+      "output_names": [
+        "MIN_IP_PKT_LEN"
+      ]
+    },
+    {
+      "raw_column": "SERVER_TCP_FLAGS",
+      "kind": "flags",
+      "offset": 3,
+      "encoding": "eight_bits_lsb_first",
+      "missing_value": 0,
+      "output_names": [
+        "SERVER_TCP_FLAGS.bit0",
+        "SERVER_TCP_FLAGS.bit1",
+        "SERVER_TCP_FLAGS.bit2",
+        "SERVER_TCP_FLAGS.bit3",
+        "SERVER_TCP_FLAGS.bit4",
+        "SERVER_TCP_FLAGS.bit5",
+        "SERVER_TCP_FLAGS.bit6",
+        "SERVER_TCP_FLAGS.bit7"
+      ]
+    },
+    {
+      "raw_column": "DST_TO_SRC_AVG_THROUGHPUT",
+      "kind": "numeric",
+      "offset": 11,
+      "encoding": "numeric",
+      "median": 712000.0,
+      "log1p": true,
+      "anchor_lower": 0.0,
+      "anchor_upper": 16.659415080424406,
+      "clip_lower": -16.659415080424406,
+      "clip_upper": 66.63766032169762,
+      "scale": 16.659415080424406,
+      "output_names": [
+        "DST_TO_SRC_AVG_THROUGHPUT"
+      ]
+    },
+    {
+      "raw_column": "L7_PROTO",
+      "kind": "categorical",
+      "offset": 12,
+      "encoding": "one_hot",
+      "categories": [
+        "37",
+        "36",
+        "5"
+      ],
+      "has_other": true,
+      "unknown_and_missing": "other",
+      "other_channel_min_frequency": 0.0005,
+      "output_names": [
+        "L7_PROTO=37",
+        "L7_PROTO=36",
+        "L7_PROTO=5",
+        "L7_PROTO=other"
+      ]
+    }
+  ],
+  "output_names": [
+    "MIN_TTL",
+    "MAX_TTL",
+    "MIN_IP_PKT_LEN",
+    "SERVER_TCP_FLAGS.bit0",
+    "SERVER_TCP_FLAGS.bit1",
+    "SERVER_TCP_FLAGS.bit2",
+    "SERVER_TCP_FLAGS.bit3",
+    "SERVER_TCP_FLAGS.bit4",
+    "SERVER_TCP_FLAGS.bit5",
+    "SERVER_TCP_FLAGS.bit6",
+    "SERVER_TCP_FLAGS.bit7",
+    "DST_TO_SRC_AVG_THROUGHPUT",
+    "L7_PROTO=37",
+    "L7_PROTO=36",
+    "L7_PROTO=5",
+    "L7_PROTO=other"
+  ],
+  "input_dimension": 16,
+  "dtype": "float32",
+  "fit_population": "normal training only",
+  "fit_rows": 97010,
+  "clip_quantile": 0.999,
+  "numeric_formula": "x=median if invalid; z=log1p(x) if configured else x; (clip(z,clip_lower,clip_upper)-anchor_lower)/scale",
+  "numeric_output_range": [
+    -1.0,
+    4.0
+  ],
+  "clipping_policy": "Training normal q0.001/q0.999 are scale anchors. Saturation extends one anchor-span below and three above that interval to retain bounded out-of-normal contrast.",
+  "invalid_behavior": "Absent required column: error. Malformed/nonfinite/negative/out-of-domain: missing. Numeric: training median; category: per-entry other or all-zero; flags: zero mask.",
+  "out_of_range": "Numeric values saturate at saved training-derived bounds, output [-1,4]; values beyond normal quantile anchors retain bounded contrast. Unknown categories follow per-entry other/all-zero rule. No refitting.",
+  "extra_columns": "Ignored; never used to infer order or inputs",
+  "flow_direction": "nProbe exported orientation; IN=src->dst, OUT=dst->src; do not reorder endpoints"
+}

@@ -1,0 +1,44 @@
+{
+  "arguments": {
+    "download": true,
+    "data": null,
+    "output": "results",
+    "chunk_size": 100000,
+    "sample_rows": 100000,
+    "mi_rows": 30000,
+    "seed": 20261110,
+    "train_fraction": 0.6,
+    "validation_fraction": 0.2,
+    "gap_ms": 60000,
+    "correlation": 0.95,
+    "modal_limit": 0.9995,
+    "mrmr_penalty": 0.1,
+    "target_fpr": 0.01
+  },
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  },
+  "csv_sha256": "4ebb97bd74412d566137d95a6fc3ffd8f374f1cf8cfe204d007848e7a668f9b5",
+  "sources": {
+    "dataset": "https://rdm.uq.edu.au/files/abd2f5d8-e268-4ff0-84fb-f2f7b3ca3e8f",
+    "feature_file": "sources/NetFlow_v3_Features.csv (verified archive payload)",
+    "paper": "https://arxiv.org/html/2503.04404v3#S3.T1",
+    "nprobe": "https://www.ntop.org/guides/nprobe/cli_options.html",
+    "nprobe_elements": "https://www.ntop.org/guides/nprobe/flow_information_elements.html",
+    "seconds": "https://ntop.org/introducing-per-second-measurements-in-nprobe-flow-exports/"
+  },
+  "source_sha256": {
+    "svdd_features/__init__.py": "fd764c777e7ca66ab8f9d578a0669553c7556a370bca44fad94dd12140edea28",
+    "svdd_features/acquire.py": "bd4a3cab5e507f4df050f4e5344afd90e48636c44e9bf5edc29adbc0f6e7e968",
+    "svdd_features/data.py": "c1a54fd428d9b6ad07a59345492a70a7d9cc999994ea325ea1fde70980ed1791",
+    "svdd_features/evaluation.py": "cf6694fd647e6a73c991fc196268fb74e75b14f9db8fb24eecc08ec106b13c30",
+    "svdd_features/preprocessing.py": "44d8c63908aec7beb617f2682f5355f54e1b27f951b5b9d55904112f8fd55a0f",
+    "svdd_features/schema.py": "abcd03ae8c1c5416633045deea7c6fad9374e5d483162ff36922385dfa611308",
+    "svdd_features/selection.py": "e22121202f0366f621097eb00ae0d39cd3432cccade93b3c90c4dbf05d00bb78",
+    "svdd_features/workflow.py": "fa14673dad1b6871f55861d29f3d4db46d01de07630371fca513e0bb1f1eaebc"
+  }
+}

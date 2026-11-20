@@ -1,0 +1,95 @@
+{
+  "method": "chronological flow-start quantiles with whole-flow end purge and symmetric embargo",
+  "train_fraction": 0.6,
+  "validation_fraction": 0.2,
+  "embargo_ms": 60000,
+  "cutoffs_ms": [
+    1424229622862,
+    1424246259997
+  ],
+  "invalid_time_rows": 0,
+  "time_or_boundary_purged_rows": 7253,
+  "cross_partition_duplicate_rows_purged": 120705,
+  "counts_before_duplicate_purge": [
+    1417416,
+    469630,
+    471125
+  ],
+  "limitations": "Same hosts/capture may span partitions. No independent PCAP/session IDs. Chronology reduces leakage but is not a held-out network or capture evaluation; attack-family proportions may shift.",
+  "partitions": {
+    "train": {
+      "rows": 1417416,
+      "start_min_ms": 1421927376907,
+      "end_max_ms": 1424229562763,
+      "class_distribution": {
+        "0": 1375035,
+        "1": 42381
+      },
+      "attack_distribution": {
+        "Benign": 1375035,
+        "Fuzzers": 11880,
+        "Exploits": 13078,
+        "Backdoor": 3188,
+        "Reconnaissance": 5367,
+        "Generic": 5593,
+        "DoS": 1729,
+        "Shellcode": 982,
+        "Analysis": 514,
+        "Worms": 50
+      }
+    },
+    "validation": {
+      "rows": 411229,
+      "start_min_ms": 1424229683966,
+      "end_max_ms": 1424246199955,
+      "class_distribution": {
+        "0": 373424,
+        "1": 37805
+      },
+      "attack_distribution": {
+        "Benign": 373424,
+        "Fuzzers": 11264,
+        "Exploits": 15168,
+        "Backdoor": 172,
+        "Reconnaissance": 5711,
+        "Generic": 2036,
+        "DoS": 2328,
+        "Shellcode": 797,
+        "Analysis": 269,
+        "Worms": 60
+      }
+    },
+    "test": {
+      "rows": 408821,
+      "start_min_ms": 1424246320097,
+      "end_max_ms": 1424262565011,
+      "class_distribution": {
+        "0": 372824,
+        "1": 35997
+      },
+      "attack_distribution": {
+        "Benign": 372824,
+        "Fuzzers": 9972,
+        "Exploits": 14052,
+        "Backdoor": 1063,
+        "Reconnaissance": 5733,
+        "Generic": 2231,
+        "DoS": 1875,
+        "Shellcode": 580,
+        "Analysis": 443,
+        "Worms": 48
+      }
+    }
+  },
+  "bounded_sample": {
+    "limit_per_partition": 100000,
+    "seed": 20261110,
+    "algorithm": "numpy PCG64 choice without replacement of eligible row IDs; sorted output; no class balancing",
+    "sizes": {
+      "train": 100000,
+      "validation": 100000,
+      "test": 100000
+    },
+    "normal_training_rows": 97010
+  }
+}

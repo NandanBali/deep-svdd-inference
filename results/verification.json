@@ -1,0 +1,63 @@
+{
+  "A_compact": {
+    "save_reload_exact": true,
+    "column_reordering_exact": true,
+    "labels_excluded": true,
+    "golden_raw_and_exported_vectors_exact": true,
+    "finite_float32": true,
+    "encoded_partition_disjoint": true,
+    "test_rows_exported": 39166,
+    "test_encoded_duplicate_purge": 60834,
+    "test_metrics_computed": false,
+    "baseline_array_sha256": {
+      "x_train": "1507abdcb9a2e123492ec212a143e11f8422df71f0da2e10e4df8122e456d76b",
+      "train_row_ids": "e7447347fbc678f2110cc32ebcf46bac94aba4d28e24aecdce076509e382076e",
+      "x_validation": "1997cbd992301b125b6ffd0bf89122a9a409e63af4aa177fa1a9ea692d22d433",
+      "y_validation": "3b48df1cfacfc6e5795986c7e8c5c26c6648e5e203c8384d9828377c711df4d2",
+      "attack_validation": "2a8c5c7cb88c2e78551f9bc4c01593181610e732bc7a9044abab791a6f791cbb",
+      "validation_row_ids": "703bab0ea84b46b31c32f256d5c5157e7a469ee2991a1f7c3b1e1ffb7288cfe6",
+      "x_test": "430f3a031171a61c176da34b001e43088bb762b1ad05a719ea21844b66765180",
+      "y_test": "7a5c933a302c17142685174c0d2cc21c0ea3fcb61c2846c4e2048ea98f1c3b08",
+      "attack_test": "5f0739f5ac695b7f3a9cd3dddbd681a51893ba7057adee4876513bad0d4d2b6d",
+      "test_row_ids": "eb1ff4f1e7f187b60bc8b5ff00c45a2ebe8681289f7adaeaf7ab67a01b970b33"
+    }
+  },
+  "A_balanced": {
+    "save_reload_exact": true,
+    "column_reordering_exact": true,
+    "labels_excluded": true,
+    "golden_raw_and_exported_vectors_exact": true,
+    "finite_float32": true,
+    "encoded_partition_disjoint": true,
+    "test_rows_exported": 0,
+    "test_encoded_duplicate_purge": null,
+    "test_metrics_computed": false,
+    "baseline_array_sha256": {
+      "x_train": "355f7140d2af3d8ed28017eb2d64eb9a07875b714c142c8a07bd8762f4539fa0",
+      "train_row_ids": "e7447347fbc678f2110cc32ebcf46bac94aba4d28e24aecdce076509e382076e",
+      "x_validation": "6e4756769c8e2f7c3c17f6e55e6a09bf447caf8ee5547774aee415a2bc82ee79",
+      "y_validation": "3b48df1cfacfc6e5795986c7e8c5c26c6648e5e203c8384d9828377c711df4d2",
+      "attack_validation": "2a8c5c7cb88c2e78551f9bc4c01593181610e732bc7a9044abab791a6f791cbb",
+      "validation_row_ids": "703bab0ea84b46b31c32f256d5c5157e7a469ee2991a1f7c3b1e1ffb7288cfe6"
+    }
+  },
+  "B_mrmr": {
+    "save_reload_exact": true,
+    "column_reordering_exact": true,
+    "labels_excluded": true,
+    "golden_raw_and_exported_vectors_exact": true,
+    "finite_float32": true,
+    "encoded_partition_disjoint": true,
+    "test_rows_exported": 0,
+    "test_encoded_duplicate_purge": null,
+    "test_metrics_computed": false,
+    "baseline_array_sha256": {
+      "x_train": "8dd4ab65059c6cb72030c6269e026ccdbb393bfac7a39841f13c937aece5ee98",
+      "train_row_ids": "e7447347fbc678f2110cc32ebcf46bac94aba4d28e24aecdce076509e382076e",
+      "x_validation": "e6019355da7ddf4ac442dff58eeb4566cdf2fc9808cacdc58b2cac77e7782ec0",
+      "y_validation": "3b48df1cfacfc6e5795986c7e8c5c26c6648e5e203c8384d9828377c711df4d2",
+      "attack_validation": "2a8c5c7cb88c2e78551f9bc4c01593181610e732bc7a9044abab791a6f791cbb",
+      "validation_row_ids": "703bab0ea84b46b31c32f256d5c5157e7a469ee2991a1f7c3b1e1ffb7288cfe6"
+    }
+  }
+}

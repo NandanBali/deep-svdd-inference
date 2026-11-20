@@ -1,0 +1,25 @@
+{
+  "data": "data/NF-UNSW-NB15-v3.csv",
+  "data_seed": 20261110,
+  "sample_rows": 100000,
+  "chunk_size": 100000,
+  "train_fraction": 0.6,
+  "validation_fraction": 0.2,
+  "gap_ms": 60000,
+  "synthetic": false,
+  "preprocessing": {
+    "scaler": "quantile_anchor", "log_mode": "audited", "clip_quantile": 0.999,
+    "output_clip": [-1.0, 4.0], "clipping": true
+  },
+  "training": {
+    "learning_rate": 0.001, "regularization": 0.000001,
+    "batch_size": 1024, "max_epochs": 30, "min_epochs": 5,
+    "patience": 5, "relative_min_delta": 0.0001, "center_epsilon": 0.1,
+    "cpu_threads": 4
+  },
+  "eligible_seeds": [7], "compact_seeds": [7, 17, 27],
+  "primary_seed": 7, "target_fpr": 0.01,
+  "golden_rows": 256,
+  "fixed_point": [{"bits": 16, "integer_bits": 6}, {"bits": 24, "integer_bits": 8}],
+  "benchmark": {"single_warmup": 200, "single_calls": 2000, "batch_warmup": 50, "batch_calls": 100, "trials": 5, "batch_size": 1024}
+}

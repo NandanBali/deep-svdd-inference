@@ -1,0 +1,3 @@
+-r requirements.lock
+# CPU and CUDA wheels share this release; record the exact local build in environment.json.
+torch==2.12.0
